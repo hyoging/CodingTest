@@ -12,5 +12,5 @@ def solution(characters):
 characters = "senteeeencccccceeee"
 ret = solution(characters)
 
-#Press Run button to receive output.
+#Press Run button to receive output
 print("Solution: return value of the function is", ret, ".")
