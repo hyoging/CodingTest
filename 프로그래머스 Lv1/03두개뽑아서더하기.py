@@ -5,12 +5,22 @@
 
 def main():
     numbers = [5, 0, 2, 7]
+    print(solution(numbers))
 
 
 def solution(numbers):
-    answer = []
+    #answer는 비어있는 list(배열)
+    answer = list()
+    for i in range(len(numbers)-1):
+        for j in range(i+1, len(numbers)):
+            # numbers[i]는 첫 번째 선택한 숫자
+            # numbers[j]는 두 번째 선택한 숫자
+            if (numbers[i] + numbers[j]) not in answer:
+                #list 끝부분에 값을 삽입
+                answer.append(numbers[i]+numbers[j])
+    answer.sort()
     return answer
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
