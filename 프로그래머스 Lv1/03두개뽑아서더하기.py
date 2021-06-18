@@ -19,8 +19,7 @@ def solution(numbers):
             if (두수의합) not in answer:
                 #list 끝부분에 값을 삽입
                 answer.append(두수의합)
-    answer.sort()
-    return answer
+    return list(set(answer))
 
 
 if __name__ == "__main__":
